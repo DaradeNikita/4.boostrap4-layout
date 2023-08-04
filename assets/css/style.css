@@ -1,0 +1,121 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+.main-header .navbar-brand {
+    width: 120px;
+}
+.main-header .navbar-brand img{
+    width: 100%;
+}
+.main-header .navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+.main-header .navbar-dark .navbar-nav .active>.nav-link,
+.main-header  .navbar-dark .navbar-nav .nav-link.active,
+.main-header .navbar-dark .navbar-nav .nav-link.show,
+.main-header .navbar-dark .navbar-nav .show>.nav-link {
+    color: orange;
+    border-bottom: 2px solid orange;
+}
+.main-header .navbar-dark .navbar-nav .nav-link:focus, 
+.main-header .navbar-dark .navbar-nav .nav-link:hover {
+    color: orange;
+    border-bottom: 2px solid;
+}
+
+/* .main-slider  css */
+
+.main-slider .carousel-item{
+    height: 450px;
+}   
+.main-slider .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+.main-slider .carousel-caption {
+    bottom: auto;
+    top: 20%;
+}
+
+
+.paralax{
+    /* background-image: linear-gradient(to right , rgba(0, 0, 0, .7),rgba(0, 0, 0, .7)), url('../images/lights.jpg'); */
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.paralax::before{
+    content:'';
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7);
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.btn-red.btn:hover{
+    background-color: red;
+    color: white;
+}
+.home.paralax {
+    background-image: url('../images/lights.jpg');
+
+}
+.video.paralax {
+    background-image: url('../images/media.jpg');
+
+}
+.video i{
+    cursor: pointer;
+}
+.home-gallery a{
+    height: 250px;
+    width: 100%;
+    display: inline-block;
+ }
+.home-gallery a > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* about us css */
+#tmslider .owl-nav{
+    position: absolute;
+    top: 25%;
+    left: -3%;
+    width: 106%;
+    display: flex;
+    justify-content: space-between;
+}
+#tmslider .item{
+   text-align:justify;
+}
+#tmslider .item img{
+    width: 80% !important;
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    border:3px solid white;
+    }
+   /* contact us css */
+.staff img{
+    width: 100%;
+    border: 6px groove grey;
+    margin-bottom: 20px;
+}
+
+.footer{
+    background-color: black;
+    color:white;
+}
+@media all and (max-width:768px){
+    .news .form-inline .form-group {
+        flex: 0 0 100%;
+    }
+}
